@@ -71,3 +71,19 @@ variable "msi_id" {
   description = "The Managed Service Identity ID. If this value isn't null (the default), 'data.azurerm_client_config.current.object_id' will be set to this value."
   default     = null
 }
+variable "tenant_id" {
+  type        = string
+  description = "The tenant ID of the Azure Active Directory. If this value isn't null (the default), 'data.azurerm_client_config.current.tenant_id' will be set to this value."
+  default     = null
+}
+
+variable "object_id" {
+  type        = string
+  description = "The object ID of the Azure Active Directory. If this value isn't null (the default), 'data.azurerm_client_config.current.object_id' will be set to this value."
+  default     = null
+}
+variable "subscription_id" {
+  type        = string
+  description = "The subscription ID of the Azure Active Directory. If this value isn't null (the default), 'data.azurerm_client_config.current.subscription_id' will be set to this value."
+  default     = null
+}
