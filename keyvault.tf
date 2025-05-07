@@ -1,5 +1,5 @@
 resource "azurerm_key_vault" "vault" {
-  name                       = "tani_terra_kv001"
+  name                       = "taniterrakv001"
   location                   = azurerm_resource_group.rg.location
   resource_group_name        = azurerm_resource_group.rg.name
   tenant_id                  = var.tenant_id
